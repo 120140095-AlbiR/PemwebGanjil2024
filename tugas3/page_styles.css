@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flex-item {
+    flex: 1;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+article {
+    flex: 3;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+aside {
+    flex: 1;
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Responsive design tablet */
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive design smartphone */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    .flex-item {
+        margin: 5px 0;
+    }
+
+    article, aside {
+        padding: 10px;
+    }
+
+    .responsive-img {
+        margin-top: 5px;
+    }
+}
